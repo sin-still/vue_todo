@@ -1,7 +1,7 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/todos">Todos</router-link>
   </nav>
   <router-view/>
 </template>
@@ -17,10 +17,16 @@
 
 nav {
   padding: 30px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    padding: 0 20px;
+    text-decoration: none;
 
     &.router-link-exact-active {
       color: #42b983;
